@@ -1,0 +1,118 @@
+.profile{
+    display: flex;
+}
+.profileRight{
+    flex: 9;
+}
+.profileRightBottom{
+    display: flex;
+}
+.profileCoverImg{
+    height: 250px;
+    width: 100%;
+
+}
+.profilecover{
+    position: relative;
+    height: 320px;
+}
+.profileUserimg{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 42%;
+    /* left:50% */
+}
+.profileRightTop{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.profileInfo{
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin: auto;
+
+}
+.profileName{
+    font-weight:700;
+    font-size:22px;
+    text-align:center
+}
+.profileDesc{
+    font-size: 15px;
+    margin-top: 4px;
+    text-align: center;
+}
+.update_cover_icon{
+    position: absolute;
+    top: 68%;
+    right: 1%;
+
+    font-size: 30px;
+    color: #1e4fe6;
+    cursor: pointer;
+    background-color: rgb(244, 244, 242);
+    border-radius: 6px;
+    padding: 1px;
+}
+.update_profile_icon{
+    position: absolute;
+    top: 84%;
+    right: 44%;
+    font-size: 30px;
+    color: #1e4fe6;
+    cursor: pointer;
+    background-color: rgb(244, 244, 242);
+    border-radius: 6px;
+    padding: 1px;
+}
+.cover_img{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    object-fit: cover;
+}
+.profile_img{
+    width: 100vh;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    object-fit: cover;
+}
+
+.btn_update{
+    color: white;
+    background-color: #3d7160;
+    border-radius: 13px;
+    padding: 3px;
+}
+.btn_update:hover{
+    background-color: #0e3729;
+}
+.btn_cancel{
+    color: white;
+    background-color: #6b3d71;
+    border-radius: 13px;
+    padding: 3px;
+    float: right;
+}
+.btn_cancel:hover{
+    background-color: #46174d;
+}
+
+
+

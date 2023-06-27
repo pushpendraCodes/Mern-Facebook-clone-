@@ -1,0 +1,71 @@
+.leftbar{
+    flex: 3;
+    height: 91vh;
+    overflow-y: scroll;
+    position: sticky;
+    top: 50px;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+  color: rgb(158, 160, 161);
+}
+::-webkit-scrollbar-thumb {
+   background-color: rgb(169, 162, 162);
+}
+.leftbarwrapper{
+margin-top: 7px;
+padding: 20px;
+}
+.leftbarlist{
+margin:0 ;
+padding: 0;
+
+
+}
+
+.leftbarItem{
+    display: flex;
+    margin-bottom: 15px;
+
+}
+.leftbarIcon{
+    margin-right: 12px;
+}
+.leftbarButton{
+display: flex;
+justify-content: space-around;
+margin-bottom: 20px;
+margin-top: 5px;
+
+
+}
+.left_frindList{
+    padding: 0;
+    margin: 0;
+}
+.left_friends{
+display: flex;
+margin-bottom: 7px;
+
+}
+.left_hr{
+width: 90%;
+margin-bottom: 10px;
+
+}
+.leftbarImg{
+    height: 37px;
+    width: 38px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftbar_frinds_name{
+    align-items: center;
+    margin-top: 8px;
+}

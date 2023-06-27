@@ -1,0 +1,10 @@
+*{
+  margin: 0;
+font-family: 'Roboto',sans-serif;
+}
+.page_not_found{
+position: absolute;
+top: 50%;
+left: 50%;
+
+}
