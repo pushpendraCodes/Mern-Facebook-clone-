@@ -30,7 +30,7 @@ const Feed = ({ id }) => {
           {
             headers: {
               "Content-Type": "application/json",
-              authorization: JSON.parse(localStorage.getItem("token")),
+              authorization: JSON.parse(localStorage.getItem("user")),
             },
           }
         );
@@ -82,7 +82,7 @@ const Feed = ({ id }) => {
   return (
     <div className="feed">
       <div className="feedWrapper">
-        {!id && <Share />}
+        {!id && <Share   get_feed={get_feed} />}
 
         {Posts.map((item, i) => {
           return (

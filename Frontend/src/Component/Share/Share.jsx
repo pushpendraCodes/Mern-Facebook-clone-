@@ -15,7 +15,7 @@ import axios from "axios";
 import InputEmoji from "react-input-emoji";
 import { Link } from "react-router-dom";
 
-const Share = () => {
+const Share = ({get_feed}) => {
   let url = import.meta.env.VITE_APP_API_URL;
 
   // const [ text, setText ] = useState('')
@@ -28,7 +28,7 @@ const Share = () => {
   const [preview, setpreview] = useState();
   const [desc, settext] = useState("");
 
-
+console.log(desc,"desc")
   // handelChange function
   const hendelChange = (e) => {
     setfiles(e.target.files[0]);
@@ -61,7 +61,8 @@ const Share = () => {
     if (res.status === 200) {
       setpreview(null);
       settext("");
-      window.location.reload();
+      // window.location.reload();
+      get_feed()
       toast.success("post successfully", {
         position: "bottom-left",
         autoClose: 5000,
@@ -102,17 +103,24 @@ const Share = () => {
               alt=""
             />
           </Link>
-
+{/*
           <InputEmoji
             borderColor="white"
             value={desc}
             onChange={(e) => {
-              settext;
+              settext(e.target.value)
             }}
             cleanOnEnter
             onEnter={handleOnEnter}
             placeholder="Type a message"
-          />
+          /> */}
+
+<input  placeholder="Type a message"  className="shareTopInput" type="text"  value={desc}
+            onChange={(e) => {
+              settext(e.target.value)
+
+            }} />
+
         </div>
         <hr className="share_hr" />
 
